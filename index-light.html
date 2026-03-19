@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная — Волжские просторы (светлая)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/sliders.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+    <style>
+        body {
+            background-color: #f5f0eb;
+        }
+        h1 {
+            color: #333;
+        }
+        .about_us_card {
+            background: rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.1);
+            color: #333;
+        }
+        .welcome_section {
+            color: #333;
+        }
+        .welcome_section p {
+            color: #555;
+        }
+        .trip_card {
+            background: white;
+            border: 1px solid #ddd;
+            color: #333;
+        }
+        .trip_card span {
+            color: #555;
+        }
+        .card_info span {
+            color: #333;
+        }
+        .search_section h1 {
+            color: #333;
+        }
+        .reviews h1 {
+            color: #333;
+        }
+        .auth_section h1 {
+            color: #333;
+        }
+        .subscribe_section {
+            color: #333;
+        }
+        .subscribe_section > p {
+            color: #666;
+        }
+        .subscribe_checkbox {
+            color: #333;
+        }
+        .hot_section span {
+            color: #333;
+        }
+        .hot_badge {
+            color: white;
+        }
+        .timer_unit {
+            background: rgba(0,0,0,0.05);
+        }
+        .timer_unit span:first-child {
+            color: #333;
+        }
+        .timer_unit_label {
+            color: #888;
+        }
+        .timer_sep {
+            color: #333;
+        }
+        .timer_label {
+            color: #666;
+        }
+        .hero h1 {
+            color: white;
+        }
+        .hero span {
+            color: white;
+        }
+        .hero div p {
+            color: white;
+        }
+        .slider_rating {
+            color: #333;
+        }
+        footer a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headerleft">
+            <a class="headerbtn" href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+        </div>
+        <div class="header_nav">
+            <a class="headerbtn" href="#about_us">О нас</a>
+            <a class="headerbtn" href="tour.html">Экскурсии</a>
+            <a class="headerbtn" href="#contacts">Контакты</a>
+            <a class="headerbtn" href="#search">Поиск</a>
+        </div>
+        <div class="header_right">
+            <a class="headerbtn" href="index.html">Сменить тему</a>
+            <a class="headerbtn" href="registration.html">Регистрация</a>
+            <a class="headerbtn" href="#auth">Вход</a>
+            <a class="headerbtn" href="account.html">Кабинет</a>
+            <a class="headerbtn accessible_btn" href="#" onclick="toggleAccessibility(); return false;">👁 Для слабовидящих</a>
+        </div>
+        <a class="burger_btn" href="#" onclick="toggleMenu(); return false;">☰</a>
+    </header>
+
+    <div class="mobile_menu" id="mobile_menu">
+        <a href="#about_us">О нас</a>
+        <a href="tour.html">Экскурсии</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#search">Поиск</a>
+        <a href="index.html">Сменить тему</a>
+        <a href="registration.html">Регистрация</a>
+        <a href="#auth">Вход</a>
+        <a href="account.html">Кабинет</a>
+        <a class="accessible_btn_mobile" href="#" onclick="toggleAccessibility(); return false;">👁 Для слабовидящих</a>
+    </div>
+
+    <div class="hero">
+        <img src="img/about.jpg">
+        <img src="img/logo.png" class="hero_logo" alt="Волжские просторы">
+        <span>Ваш проводник в историю Нижнего Новгорода</span>
+        <div>
+            <p>5 экскурсий</p>
+            <p>•</p>
+            <p>500+ туристов</p>
+            <p>•</p>
+            <p>с 2015 года</p>
+        </div>
+    </div>
+
+    <section id="about_us">
+        <div class="about_us">
+            <h1>О нас</h1>
+            <div class="about_us_content">
+                <div class="about_us_img">
+                    <img src="img/about.jpg" alt="О нас">
+                </div>
+                <div class="about_us_container">
+                    <div class="about_us_card">
+                        <h2>🏛️ Авторский взгляд</h2>
+                        <p>Мы не идём по шаблону — каждая экскурсия уникальна. Наши гиды — местные историки и краеведы, которые знают город изнутри.</p>
+                    </div>
+                    <div class="about_us_card">
+                        <h2>👥 Малые группы</h2>
+                        <p>Максимум 10 человек в группе — чтобы каждый мог услышать гида, задать вопрос и получить внимание.</p>
+                    </div>
+                    <div class="about_us_card">
+                        <h2>📖 Живые истории</h2>
+                        <p>Каждая экскурсия — это не лекция, а разговор с городом. Мы рассказываем о людях и событиях, а не просто о датах и фактах.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="welcome">
+        <div class="welcome_section">
+            <h1>Добро пожаловать!</h1>
+            <p>Дорогие друзья! Мы рады приветствовать вас на сайте турагентства «Волжские просторы». Наша команда с любовью создаёт маршруты, которые раскрывают душу Нижнего Новгорода — города с богатейшей историей, уникальной архитектурой и неповторимым волжским характером. Мы хотим, чтобы каждый гость почувствовал атмосферу этого удивительного места и увёз с собой незабываемые впечатления. Присоединяйтесь к нашим экскурсиям — и откройте для себя Нижний Новгород с новой стороны!</p>
+        </div>
+    </section>
+
+    <section id="hot_trips">
+        <div class="hot_trips">
+            <div class="hot_section">
+                <div class="hot_badge">Горящие путёвки</div>
+                <span>Скидка -20% на любую путёвку из списка ниже</span>
+                <div class="timer_block">
+                    <div class="timer_label">Предложение сгорает через:</div>
+                    <div class="timer_digits">
+                        <div class="timer_unit">
+                            <span id="days">00</span>
+                            <span class="timer_unit_label">д</span>
+                        </div>
+                        <span class="timer_sep">:</span>
+                        <div class="timer_unit">
+                            <span id="hours">00</span>
+                            <span class="timer_unit_label">ч</span>
+                        </div>
+                        <span class="timer_sep">:</span>
+                        <div class="timer_unit">
+                            <span id="minutes">00</span>
+                            <span class="timer_unit_label">м</span>
+                        </div>
+                        <span class="timer_sep">:</span>
+                        <div class="timer_unit">
+                            <span id="seconds">00</span>
+                            <span class="timer_unit_label">с</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hot_trips_slider">
+                <input type="radio" name="slider" id="hot_trips_slide1" class="slider_radio" checked>
+                <input type="radio" name="slider" id="hot_trips_slide2" class="slider_radio">
+                <input type="radio" name="slider" id="hot_trips_slide3" class="slider_radio">
+                <div class="hot_trips_slides">
+                    <div class="hot_trip_block">
+                        <h2>Нижегородский кремль</h2>
+                        <p>Погрузитесь в историю древней крепости XII века. Мы пройдём вдоль всех 13 башен, узнаем о легендарной обороне города.</p>
+                        <div class="slider_rating">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="tour.html#tour1"><button>Подробнее</button></a>
+                    </div>
+                    <div class="hot_trips_slide">
+                        <img src="img/2.jpg" alt="Слайд1">
+                    </div>
+                    <div class="hot_trip_block">
+                        <h2>Купеческий Нижний</h2>
+                        <p>Нижний Новгород был одним из главных торговых городов России. Увидим особняки, заглянем в старинные дворы.</p>
+                        <div class="slider_rating">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="tour.html#tour2"><button>Подробнее</button></a>
+                    </div>
+                    <div class="hot_trips_slide">
+                        <img src="img/3.jpg" alt="Слайд2">
+                    </div>
+                    <div class="hot_trip_block">
+                        <h2>Стрелка и набережная</h2>
+                        <p>Там, где Ока встречается с Волгой, рождается особая атмосфера. Пройдём от Чкаловской лестницы до Стрелки.</p>
+                        <div class="slider_rating">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="tour.html#tour3"><button>Подробнее</button></a>
+                    </div>
+                    <div class="hot_trips_slide">
+                        <img src="img/1.jpeg" alt="Слайд3">
+                    </div>
+                </div>
+                <div class="controls">
+                    <label for="hot_trips_slide1"></label>
+                    <label for="hot_trips_slide2"></label>
+                    <label for="hot_trips_slide3"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trips">
+        <h1>Наши экскурсии</h1>
+        <div class="trips_container">
+            <div class="trip_card">
+                <img src="img/2.jpg">
+                <h2>Нижегородский кремль</h2>
+                <span>Погрузитесь в историю древней крепости XII века. Экскурсия включает подъём на стены с панорамным видом на Волгу.</span>
+                <div class="card_info">
+                    <span>⭐ 4.9</span>
+                    <span>👥 124</span>
+                </div>
+                <a href="tour.html#tour1"><button>Узнать подробнее</button></a>
+            </div>
+            <div class="trip_card">
+                <img src="img/3.jpg">
+                <h2>Купеческий Нижний</h2>
+                <span>Увидим особняки богатейших купцов, зайдём в старинные дворы и узнаем истории о людях, построивших этот город.</span>
+                <div class="card_info">
+                    <span>⭐ 4.9</span>
+                    <span>👥 229</span>
+                </div>
+                <a href="tour.html#tour2"><button>Узнать подробнее</button></a>
+            </div>
+            <div class="trip_card">
+                <img src="img/1.jpeg">
+                <h2>Стрелка и набережная</h2>
+                <span>Там, где Ока встречается с Волгой, рождается особая атмосфера. Прогулка от Чкаловской лестницы до Стрелки.</span>
+                <div class="card_info">
+                    <span>⭐ 5.0</span>
+                    <span>👥 52</span>
+                </div>
+                <a href="tour.html#tour3"><button>Узнать подробнее</button></a>
+            </div>
+            <div class="trip_card">
+                <img src="img/4.webp">
+                <h2>Ночной Нижний</h2>
+                <span>Город после заката — совершенно другой. Подсвеченные башни кремля, огни набережной и атмосфера ночного города.</span>
+                <div class="card_info">
+                    <span>⭐ 5.0</span>
+                    <span>👥 156</span>
+                </div>
+                <a href="tour.html#tour4"><button>Узнать подробнее</button></a>
+            </div>
+            <div class="trip_card">
+                <img src="img/5.jpeg">
+                <h2>Литературный маршрут</h2>
+                <span>По следам Горького и Мельникова-Печерского. Пройдём по местам великих произведений русской литературы.</span>
+                <div class="card_info">
+                    <span>⭐ 4.8</span>
+                    <span>👥 35</span>
+                </div>
+                <a href="tour.html#tour5"><button>Узнать подробнее</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="search">
+        <div class="search_section">
+            <h1>Поиск экскурсий</h1>
+            <div class="search_form">
+                <input type="text" list="search_hints" placeholder="Введите название или описание экскурсии">
+                <datalist id="search_hints">
+                    <option value="Нижегородский кремль">
+                    <option value="Купеческий Нижний">
+                    <option value="Стрелка и набережная">
+                    <option value="Ночной Нижний">
+                    <option value="Литературный маршрут">
+                </datalist>
+                <button>Поиск</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="reviews">
+            <h1>Отзывы</h1>
+            <div class="reviews_slider">
+                <input type="radio" name="reviews_radio" id="review1" class="slider_radio" checked>
+                <input type="radio" name="reviews_radio" id="review2" class="slider_radio">
+                <input type="radio" name="reviews_radio" id="review3" class="slider_radio">
+                <div class="reviews_slides">
+                    <div class="review_slide">
+                        <img src="img/avatar.jpg" alt="Аватар">
+                        <div class="review_text">
+                            <div class="review_header">
+                                <span>Рома</span>
+                                <span>★★★★★</span>
+                            </div>
+                            <span>Были на экскурсии по кремлю, очень понравилось. Гид классный, виды сверху огонь!</span>
+                            <div class="review_footer">
+                                <span class="review_date">12.02.2026</span>
+                                <a href="tour.html#tour1">Нижегородский кремль →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_slide">
+                        <img src="img/avatar.jpg" alt="Аватар">
+                        <div class="review_text">
+                            <div class="review_header">
+                                <span>Дима</span>
+                                <span>★★★★☆</span>
+                            </div>
+                            <span>Ходили на «Купеческий Нижний». Прикольно было по старым улицам гулять. Хочу ещё на ночную.</span>
+                            <div class="review_footer">
+                                <span class="review_date">28.01.2026</span>
+                                <a href="tour.html#tour2">Купеческий Нижний →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_slide">
+                        <img src="img/avatar.jpg" alt="Аватар">
+                        <div class="review_text">
+                            <div class="review_header">
+                                <span>Егор</span>
+                                <span>★★★★★</span>
+                            </div>
+                            <span>Ночная экскурсия топ! Город в подсветке вообще другой. Точно ещё приду.</span>
+                            <div class="review_footer">
+                                <span class="review_date">05.03.2026</span>
+                                <a href="tour.html#tour4">Ночной Нижний →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <label for="review1"></label>
+                    <label for="review2"></label>
+                    <label for="review3"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="auth">
+        <div class="auth_section">
+            <h1>Вход в аккаунт</h1>
+            <div class="auth_form">
+                <input type="email" placeholder="Электронная почта">
+                <input type="password" placeholder="Пароль">
+                <button class="submit_btn">Войти</button>
+                <a href="#" class="forgot_link">Забыли пароль?</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="subscribe">
+        <div class="subscribe_section">
+            <h1>Подписка на новости</h1>
+            <p>Узнавайте первыми о новых экскурсиях и акциях</p>
+            <div class="subscribe_form">
+                <input type="email" placeholder="Ваш e-mail">
+                <div class="subscribe_checkbox">
+                    <input type="checkbox" id="subscribe_agree">
+                    <label for="subscribe_agree">Даю согласие на обработку персональных данных</label>
+                </div>
+                <button class="submit_btn">Подписаться</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <footer>
+            <div class="footer_container">
+                <div class="footer_column1">
+                    <span>Телефон <a href="tel:88007894567" style="color:white">8 (800) 789-45-67</a></span>
+                    <span>e-mail: <a href="mailto:volzhskie-prostory@mail.ru" style="color:white">volzhskie-prostory@mail.ru</a></span>
+                </div>
+                <div class="footer_column2">
+                    <a href="index.html">Главная</a>
+                    <a href="index-light.html">Главная-светлая</a>
+                    <a href="schedule.html">Расписание</a>
+                    <a href="tour.html">Экскурсия</a>
+                </div>
+                <div class="footer_column3">
+                    <a href="registration.html">Регистрация</a>
+                    <a href="account.html">Личный кабинет</a>
+                    <a href="404.html">404</a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="js/hot_timer.js"></script>
+    <script src="js/accessibility.js"></script>
+    <script src="js/mobile_menu.js"></script>
+</body>
+
+</html>

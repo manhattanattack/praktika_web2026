@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание экскурсий — Волжские просторы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+
+<body bgcolor="#453d3d">
+    <header>
+        <div class="headerleft">
+            <a class="headerbtn" href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+        </div>
+        <div class="header_nav">
+            <a class="headerbtn" href="index.html#about_us">О нас</a>
+            <a class="headerbtn" href="tour.html">Экскурсии</a>
+            <a class="headerbtn" href="#contacts">Контакты</a>
+            <a class="headerbtn" href="index.html#search">Поиск</a>
+        </div>
+        <div class="header_right">
+            <a class="headerbtn" href="index-light.html">Сменить тему</a>
+            <a class="headerbtn" href="registration.html">Регистрация</a>
+            <a class="headerbtn" href="login.html">Вход</a>
+            <a class="headerbtn" href="account.html">Кабинет</a>
+            <a class="headerbtn accessible_btn" href="#" onclick="toggleAccessibility(); return false;">👁 Для слабовидящих</a>
+        </div>
+        <a class="burger_btn" href="#" onclick="toggleMenu(); return false;">☰</a>
+    </header>
+
+    <div class="mobile_menu" id="mobile_menu">
+        <a href="index.html#about_us">О нас</a>
+        <a href="tour.html">Экскурсии</a>
+        <a href="#contacts">Контакты</a>
+        <a href="index.html#search">Поиск</a>
+        <a href="index-light.html">Сменить тему</a>
+        <a href="registration.html">Регистрация</a>
+        <a href="login.html">Вход</a>
+        <a href="account.html">Кабинет</a>
+        <a class="accessible_btn_mobile" href="#" onclick="toggleAccessibility(); return false;">👁 Для слабовидящих</a>
+    </div>
+
+    <section class="schedule_section">
+        <h1>Расписание экскурсий</h1>
+        <div class="schedule_wrapper">
+            <table class="schedule_table">
+                <thead>
+                    <tr>
+                        <th>Экскурсия</th>
+                        <th>9:00</th>
+                        <th>10:00</th>
+                        <th>11:00</th>
+                        <th>12:00</th>
+                        <th>13:00</th>
+                        <th>14:00</th>
+                        <th>15:00</th>
+                        <th>16:00</th>
+                        <th>17:00</th>
+                        <th>18:00</th>
+                        <th>19:00</th>
+                        <th>20:00</th>
+                        <th>21:00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Нижегородский кремль</td>
+                        <td><div class="slot available">8</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">3</div></td>
+                        <td><div class="slot available">10</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">5</div></td>
+                        <td><div class="slot available">7</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">2</div></td>
+                        <td><div class="slot available">10</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">6</div></td>
+                        <td><div class="slot available">9</div></td>
+                    </tr>
+                    <tr>
+                        <td>Купеческий Нижний</td>
+                        <td><div class="slot available">5</div></td>
+                        <td><div class="slot available">8</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">4</div></td>
+                        <td><div class="slot available">10</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">3</div></td>
+                        <td><div class="slot available">7</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">6</div></td>
+                        <td><div class="slot available">9</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">4</div></td>
+                    </tr>
+                    <tr>
+                        <td>Стрелка и набережная</td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">6</div></td>
+                        <td><div class="slot available">9</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">2</div></td>
+                        <td><div class="slot available">8</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">5</div></td>
+                        <td><div class="slot available">10</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">3</div></td>
+                        <td><div class="slot available">7</div></td>
+                        <td><div class="slot full">0</div></td>
+                    </tr>
+                    <tr>
+                        <td>Ночной Нижний</td>
+                        <td><div class="slot available">10</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">7</div></td>
+                        <td><div class="slot available">4</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">9</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">3</div></td>
+                        <td><div class="slot available">8</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">6</div></td>
+                        <td><div class="slot available">10</div></td>
+                        <td><div class="slot full">0</div></td>
+                    </tr>
+                    <tr>
+                        <td>Литературный маршрут</td>
+                        <td><div class="slot available">3</div></td>
+                        <td><div class="slot available">9</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">7</div></td>
+                        <td><div class="slot available">5</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">8</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">4</div></td>
+                        <td><div class="slot available">10</div></td>
+                        <td><div class="slot full">0</div></td>
+                        <td><div class="slot available">2</div></td>
+                        <td><div class="slot available">6</div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="legend">
+            <div class="legend_item">
+                <div class="legend_dot available"></div>
+                <span>Есть свободные места</span>
+            </div>
+            <div class="legend_item">
+                <div class="legend_dot full"></div>
+                <span>Мест нет</span>
+            </div>
+        </div>
+        <div class="schedule_booking">
+            <p>Хотите записаться на экскурсию?</p>
+            <a href="account.html"><button>Оформить путёвку</button></a>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <footer>
+            <div class="footer_container">
+                <div class="footer_column1">
+                    <span>Телефон <a href="tel:88007894567" style="color:white">8 (800) 789-45-67</a></span>
+                    <span>e-mail: <a href="mailto:volzhskie-prostory@mail.ru" style="color:white">volzhskie-prostory@mail.ru</a></span>
+                </div>
+                <div class="footer_column2">
+                    <a href="index.html">Главная</a>
+                    <a href="index-light.html">Главная-светлая</a>
+                    <a href="schedule.html">Расписание</a>
+                    <a href="tour.html">Экскурсия</a>
+                </div>
+                <div class="footer_column3">
+                    <a href="registration.html">Регистрация</a>
+                    <a href="account.html">Личный кабинет</a>
+                    <a href="404.html">404</a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="js/accessibility.js"></script>
+    <script src="js/mobile_menu.js"></script>
+</body>
+
+</html>

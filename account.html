@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет — Волжские просторы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+
+<body bgcolor="#453d3d">
+    <header>
+        <div class="headerleft">
+            <a class="headerbtn" href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+        </div>
+        <div class="header_nav">
+            <a class="headerbtn" href="index.html#about_us">О нас</a>
+            <a class="headerbtn" href="tour.html">Экскурсии</a>
+            <a class="headerbtn" href="#contacts">Контакты</a>
+            <a class="headerbtn" href="index.html#search">Поиск</a>
+        </div>
+        <div class="header_right">
+            <a class="headerbtn" href="index-light.html">Сменить тему</a>
+            <a class="headerbtn" href="login.html">Выйти</a>
+            <a class="headerbtn accessible_btn" href="#" onclick="toggleAccessibility(); return false;">👁 Для слабовидящих</a>
+        </div>
+        <a class="burger_btn" href="#" onclick="toggleMenu(); return false;">☰</a>
+    </header>
+
+    <div class="mobile_menu" id="mobile_menu">
+        <a href="index.html#about_us">О нас</a>
+        <a href="tour.html">Экскурсии</a>
+        <a href="#contacts">Контакты</a>
+        <a href="index.html#search">Поиск</a>
+        <a href="index-light.html">Сменить тему</a>
+        <a href="login.html">Выйти</a>
+        <a class="accessible_btn_mobile" href="#" onclick="toggleAccessibility(); return false;">👁 Для слабовидящих</a>
+    </div>
+
+    <section class="account_section">
+        <div class="account_info">
+            <div class="account_avatar">👤</div>
+            <span class="account_name">Иван Иванов</span>
+            <span class="account_email">ivan@mail.ru</span>
+        </div>
+
+        <div class="account_form_container">
+            <p>Записаться на экскурсию</p>
+
+            <label>Экскурсия</label>
+            <select>
+                <option>Нижегородский кремль</option>
+                <option>Купеческий Нижний</option>
+                <option>Стрелка и набережная</option>
+                <option>Ночной Нижний</option>
+                <option>Литературный маршрут</option>
+            </select>
+
+            <label>Дата</label>
+            <input type="date">
+
+            <label>Время (с 9 до 21)</label>
+            <input type="time" min="09:00" max="21:00" value="09:00">
+
+            <label>Количество человек</label>
+            <input type="number" min="1" max="10" placeholder="Количество человек">
+
+            <button class="submit_btn">Записаться</button>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <footer>
+            <div class="footer_container">
+                <div class="footer_column1">
+                    <span>Телефон <a href="tel:88007894567" style="color:white">8 (800) 789-45-67</a></span>
+                    <span>e-mail: <a href="mailto:volzhskie-prostory@mail.ru" style="color:white">volzhskie-prostory@mail.ru</a></span>
+                </div>
+                <div class="footer_column2">
+                    <a href="index.html">Главная</a>
+                    <a href="index-light.html">Главная-светлая</a>
+                    <a href="schedule.html">Расписание</a>
+                    <a href="tour.html">Экскурсия</a>
+                </div>
+                <div class="footer_column3">
+                    <a href="registration.html">Регистрация</a>
+                    <a href="account.html">Личный кабинет</a>
+                    <a href="404.html">404</a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="js/accessibility.js"></script>
+    <script src="js/mobile_menu.js"></script>
+</body>
+
+</html>

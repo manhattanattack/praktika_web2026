@@ -1,0 +1,248 @@
+.hot_trips h1 {
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+
+.hot_trips_slider {
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hot_trips_slides {
+    display: flex;
+    width: 300%;
+    transition: transform 1s ease;
+}
+
+.hot_trips_slide {
+    width: calc(100% / 6);
+    flex-shrink: 0;
+}
+
+.hot_trips_slide img {
+    height: 540px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hot_trip_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: white;
+    height: 540px;
+    padding: 40px;
+    color: black;
+    box-sizing: border-box;
+    width: calc(100% / 6);
+    flex-shrink: 0;
+}
+
+.hot_trip_block button {
+    background-color: rgb(161, 84, 84);
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    color: white;
+}
+
+.hot_trip_block h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.hot_trip_block a {
+    margin-top: auto;
+}
+
+.hot_trip_block p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.hot_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.hot_section span {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hot_badge {
+    background: linear-gradient(90deg, #c0392b, #e74c3c);
+    color: white;
+    padding: 8px 50px;
+    width: auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.timer_block {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 12px;
+}
+
+.timer_label {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+}
+
+.timer_digits {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.timer_unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 8px 14px;
+    min-width: 50px;
+}
+
+.timer_unit span:first-child {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+}
+
+.timer_unit_label {
+    font-size: 8px;
+    color: rgba(255,255,255,0.6);
+    margin-top: 2px;
+}
+
+.timer_sep {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.slider_radio {
+    display: none;
+}
+
+#hot_trips_slide1:checked ~ .hot_trips_slides {
+    transform: translateX(0%);
+}
+
+#hot_trips_slide2:checked ~ .hot_trips_slides {
+    transform: translateX(-33.33%);
+}
+
+#hot_trips_slide3:checked ~ .hot_trips_slides {
+    transform: translateX(-66.66%);
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+}
+
+.reviews h1 {
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reviews_slider {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.reviews_slides {
+    display: flex;
+    width: 300%;
+    transition: transform 1s ease;
+}
+
+.review_slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: calc(100% / 3);
+    background-color: white;
+    border-radius: 10px;
+    min-height: 120px;
+    padding: 15px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.review_text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.review_header span {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.review_slide img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+#review1:checked ~ .reviews_slides {
+    transform: translateX(0);
+}
+
+#review2:checked ~ .reviews_slides {
+    transform: translateX(-33.33%);
+}
+
+#review3:checked ~ .reviews_slides {
+    transform: translateX(-66.66%);
+}
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.controls label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: grey;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.controls label:hover {
+    background: rgb(161, 84, 84);
+}

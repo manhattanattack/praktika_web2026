@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация — Волжские просторы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+
+<body bgcolor="#453d3d">
+    <header>
+        <div class="headerleft">
+            <a class="headerbtn" href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+        </div>
+        <div class="header_nav">
+            <a class="headerbtn" href="index.html#about_us">О нас</a>
+            <a class="headerbtn" href="tour.html">Экскурсии</a>
+            <a class="headerbtn" href="#contacts">Контакты</a>
+            <a class="headerbtn" href="index.html#search">Поиск</a>
+        </div>
+        <div class="header_right">
+            <a class="headerbtn" href="index-light.html">Сменить тему</a>
+            <a class="headerbtn" href="registration.html">Регистрация</a>
+            <a class="headerbtn" href="login.html">Вход</a>
+            <a class="headerbtn" href="account.html">Кабинет</a>
+            <a class="headerbtn accessible_btn" href="#" onclick="toggleAccessibility(); return false;">👁 Для слабовидящих</a>
+        </div>
+        <a class="burger_btn" href="#" onclick="toggleMenu(); return false;">☰</a>
+    </header>
+
+    <div class="mobile_menu" id="mobile_menu">
+        <a href="index.html#about_us">О нас</a>
+        <a href="tour.html">Экскурсии</a>
+        <a href="#contacts">Контакты</a>
+        <a href="index.html#search">Поиск</a>
+        <a href="index-light.html">Сменить тему</a>
+        <a href="registration.html">Регистрация</a>
+        <a href="login.html">Вход</a>
+        <a href="account.html">Кабинет</a>
+        <a class="accessible_btn_mobile" href="#" onclick="toggleAccessibility(); return false;">👁 Для слабовидящих</a>
+    </div>
+
+    <form>
+        <div class="form_container">
+            <p>Регистрация</p>
+            <input type="email" id="email" placeholder="Почта" required>
+            <input type="text" id="name" placeholder="Имя" required>
+            <input type="text" id="surname" placeholder="Фамилия" required>
+
+            <div class="age_row">
+                <label>Возраст</label>
+                <input type="number" id="age" placeholder="Возраст" min="1" max="120" value="25" required>
+                <input type="range" id="age_range" min="1" max="120" value="25" oninput="document.getElementById('age').value = this.value">
+            </div>
+
+            <input type="password" id="pwd" placeholder="Пароль" required>
+            <input type="password" id="pwd_repeat" placeholder="Повторите пароль" required>
+
+            <div class="radio_row">
+                <p>Пол: </p>
+                <input name="sex" type="radio" value="male" required>
+                <label>Мужской</label>
+                <input name="sex" type="radio" value="female">
+                <label>Женский</label>
+            </div>
+
+            <div class="photo_upload">
+                <label for="photo_input" class="photo_label">📷 Загрузить фотографию</label>
+                <input type="file" id="photo_input" accept="image/*">
+            </div>
+
+            <div class="checkbox_row">
+                <label for="notify">Даю согласие на обработку персональных данных</label>
+                <input type="checkbox" id="notify" required>
+            </div>
+
+            <button class="submit_btn">Зарегистрироваться</button>
+
+            <div class="validation_messages">
+                <div class="msg_success">✅ Все поля заполнены корректно</div>
+                <div class="msg_error">❌ Проверьте правильность введённых данных</div>
+                <div class="msg_empty">⚠ Заполните все обязательные поля</div>
+            </div>
+        </div>
+    </form>
+
+    <div class="extra_participant">
+        <p>Дополнительный участник</p>
+        <div class="extra_fields">
+            <input type="text" placeholder="Фамилия">
+            <input type="text" placeholder="Имя">
+            <input type="number" placeholder="Возраст" min="1" max="120">
+            <select>
+                <option>Мужской</option>
+                <option>Женский</option>
+            </select>
+        </div>
+        <div class="extra_buttons">
+            <button class="add_btn">+ Добавить участника</button>
+            <button class="remove_btn">− Удалить участника</button>
+        </div>
+    </div>
+
+    <section id="contacts">
+        <footer>
+            <div class="footer_container">
+                <div class="footer_column1">
+                    <span>Телефон <a href="tel:88007894567" style="color:white">8 (800) 789-45-67</a></span>
+                    <span>e-mail: <a href="mailto:volzhskie-prostory@mail.ru" style="color:white">volzhskie-prostory@mail.ru</a></span>
+                </div>
+                <div class="footer_column2">
+                    <a href="index.html">Главная</a>
+                    <a href="index-light.html">Главная-светлая</a>
+                    <a href="schedule.html">Расписание</a>
+                    <a href="tour.html">Экскурсия</a>
+                </div>
+                <div class="footer_column3">
+                    <a href="registration.html">Регистрация</a>
+                    <a href="account.html">Личный кабинет</a>
+                    <a href="404.html">404</a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="js/accessibility.js"></script>
+    <script src="js/mobile_menu.js"></script>
+</body>
+
+</html>

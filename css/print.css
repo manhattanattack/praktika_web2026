@@ -1,0 +1,50 @@
+@media print {
+    header,
+    footer,
+    .navigation,
+    .controls,
+    .slider_radio,
+    .btn_container,
+    .burger_btn,
+    .mobile_menu {
+        display: none !important;
+    }
+
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    * {
+        color: black !important;
+        background: white !important;
+    }
+
+    .tour_card {
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+    }
+
+    .tour_card img {
+        filter: grayscale(100%) !important;
+    }
+
+    h1, h2 {
+        color: black !important;
+    }
+
+    .tour_info span {
+        color: black !important;
+    }
+
+    .print_review {
+        display: block !important;
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-top: 20px;
+    }
+}
+
+.print_review {
+    display: none;
+}
