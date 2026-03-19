@@ -1,0 +1,88 @@
+body.accessible {
+    background-color: #fff !important;
+    color: #000 !important;
+    font-size: 20px !important;
+}
+
+body.accessible * {
+    font-size: inherit !important;
+    color: #000 !important;
+    background-color: #fff !important;
+    border-color: #000 !important;
+    background-image: none !important;
+}
+
+body.accessible header {
+    background-color: #000 !important;
+}
+
+body.accessible header * {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+body.accessible footer {
+    background-color: #000 !important;
+}
+
+body.accessible footer * {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+body.accessible .hero img {
+    filter: grayscale(100%) brightness(60%);
+}
+
+body.accessible .mobile_menu {
+    background-color: #000 !important;
+}
+
+body.accessible .mobile_menu a {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+body.accessible h1,
+body.accessible h2,
+body.accessible h3 {
+    font-size: 28px !important;
+}
+
+body.accessible p,
+body.accessible span,
+body.accessible a,
+body.accessible label,
+body.accessible td,
+body.accessible th {
+    font-size: 20px !important;
+}
+
+body.accessible button {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-size: 20px !important;
+    border: 2px solid #000 !important;
+}
+
+body.accessible input,
+body.accessible select {
+    font-size: 20px !important;
+    border: 2px solid #000 !important;
+}
+
+body.accessible .about_us_card,
+body.accessible .trip_card,
+body.accessible .review_slide,
+body.accessible .tour_card {
+    border: 2px solid #000 !important;
+}
+
+body.accessible .hot_badge {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+body.accessible .accessible_btn {
+    text-decoration: underline;
+}

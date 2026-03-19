@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экскурсии — Волжские просторы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tours.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sliders.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+    <link rel="stylesheet" href="css/print.css">
+</head>
+
+<body bgcolor="#453d3d">
+    <header>
+        <div class="headerleft">
+            <a class="headerbtn" href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+        </div>
+        <div class="header_nav">
+            <a class="headerbtn" href="index.html#about_us">О нас</a>
+            <a class="headerbtn" href="tour.html">Экскурсии</a>
+            <a class="headerbtn" href="#contacts">Контакты</a>
+            <a class="headerbtn" href="index.html#search">Поиск</a>
+        </div>
+        <div class="header_right">
+            <a class="headerbtn" href="index-light.html">Сменить тему</a>
+            <a class="headerbtn" href="registration.html">Регистрация</a>
+            <a class="headerbtn" href="login.html">Вход</a>
+            <a class="headerbtn" href="account.html">Кабинет</a>
+            <a class="headerbtn accessible_btn" href="#" onclick="toggleAccessibility(); return false;">👁 Для
+                слабовидящих</a>
+        </div>
+        <a class="burger_btn" href="#" onclick="toggleMenu(); return false;">☰</a>
+    </header>
+
+    <div class="mobile_menu" id="mobile_menu">
+        <a href="index.html#about_us">О нас</a>
+        <a href="tour.html">Экскурсии</a>
+        <a href="#contacts">Контакты</a>
+        <a href="index.html#search">Поиск</a>
+        <a href="index-light.html">Сменить тему</a>
+        <a href="registration.html">Регистрация</a>
+        <a href="login.html">Вход</a>
+        <a href="account.html">Кабинет</a>
+        <a class="accessible_btn_mobile" href="#" onclick="toggleAccessibility(); return false;">👁 Для слабовидящих</a>
+    </div>
+
+    <div class="hero">
+        <img src="img/2.jpg" class="hero_background">
+        <h1 class="about">Наши экскурсии</h1>
+        <a href="#tours"><button class="to_trips_btn">Перейти к экскурсиям</button></a>
+    </div>
+
+    <section id="tours">
+        <div class="tours_container">
+            <div class="navigation">
+                <h3>Навигация</h3>
+                <span>Экскурсии</span>
+                <a href="#tour1" class="tour_link">Нижегородский кремль</a>
+                <a href="#tour2" class="tour_link">Купеческий Нижний</a>
+                <a href="#tour3" class="tour_link">Стрелка и набережная</a>
+                <a href="#tour4" class="tour_link">Ночной Нижний</a>
+                <a href="#tour5" class="tour_link">Литературный маршрут</a>
+                <a href="#reviews" class="review_link">Отзывы</a>
+            </div>
+
+            <div class="tour_cards">
+                <section id="tour1">
+                    <div class="tour_card">
+                        <div class="text_container">
+                            <h2>Нижегородский кремль</h2>
+                            <span>Нижегородский кремль — сердце города и его главный символ, без которого невозможно
+                                представить Нижний Новгород. Построенный в начале XVI века по приказу Василия III, он
+                                стал одной из самых мощных крепостей своего времени. Мы пройдём вдоль всех 13 башен и
+                                узнаем историю каждой из них — от парадной Дмитриевской до загадочной Тайницкой, в
+                                которой, по преданию, скрыт подземный ход к Волге. Вы услышите о легендарной обороне
+                                города от войск Едигея, о роли Минина и Пожарского в Смутное время, о том, как здесь
+                                собиралось народное ополчение, спасшее Россию. Отдельно поговорим о советском периоде —
+                                когда кремль был закрыт для горожан и что происходило за его стенами. Экскурсия включает
+                                подъём на стены с панорамным видом на Волгу и Заречную часть города — вид, который
+                                запомнится надолго.</span>
+                            <div class="tour_info">
+                                <span>⭐ 4.9</span>
+                                <span>•</span>
+                                <span>👥 124 человека</span>
+                                <span>•</span>
+                                <span>⏱ 2 часа</span>
+                                <span>•</span>
+                                <span>💰 <s>800</s> 600 ₽</span>
+                            </div>
+                            <div class="btn_container">
+                                <a href="schedule.html"><button>Перейти к расписанию</button></a>
+                            </div>
+                        </div>
+                        <div class="img_container">
+                            <img src="img/2.jpg">
+                        </div>
+                    </div>
+                    <div class="print_review">
+                        <p><b>Отзыв:</b></p>
+                        <p>«Потрясающая экскурсия по кремлю! Гид рассказывал так увлекательно, что два часа пролетели
+                            незаметно. Особенно впечатлил подъём на стены — вид на Волгу просто невероятный.» — Анна
+                            Петрова, 12.02.2026</p>
+                    </div>
+                </section>
+                <section id="tour2">
+                    <div class="tour_card">
+                        <div class="text_container">
+                            <h2>Купеческий Нижний</h2>
+                            <span>Нижний Новгород был одним из богатейших торговых городов России — здесь проходила
+                                знаменитая Нижегородская ярмарка, куда съезжались купцы со всего света и заключались
+                                сделки на миллионы рублей. Мы пройдём по улицам, где жили богатейшие люди страны —
+                                увидим их роскошные особняки, зайдём в старинные купеческие дворы и узнаем истории о
+                                людях, чьё богатство и амбиции буквально построили этот город. Поговорим о купеческих
+                                династиях — Рукавишниковых, Бугровых, Башкировых — и о том, как они соперничали между
+                                собой не только в торговле, но и в меценатстве. Отдельно расскажем о том, как ярмарка
+                                повлияла на архитектуру и облик Нижнего, который мы видим сегодня, и почему именно здесь
+                                зародились традиции русской торговли.</span>
+                            <div class="tour_info">
+                                <span>⭐ 4.9</span>
+                                <span>•</span>
+                                <span>👥 229 человека</span>
+                                <span>•</span>
+                                <span>⏱ 1.5 часа</span>
+                                <span>•</span>
+                                <span>💰 <s>700</s> 550 ₽</span>
+                            </div>
+                            <div class="btn_container">
+                                <a href="schedule.html"><button>Перейти к расписанию</button></a>
+                            </div>
+                        </div>
+                        <div class="img_container">
+                            <img src="img/3.jpg">
+                        </div>
+                    </div>
+                    <div class="print_review">
+                        <p><b>Отзыв:</b></p>
+                        <p>«Очень понравилась экскурсия «Купеческий Нижний». Узнал много нового о купеческих династиях,
+                            было интересно гулять по старинным улочкам.» — Дмитрий Козлов, 28.01.2026</p>
+                    </div>
+                </section>
+                <section id="tour3">
+                    <div class="tour_card">
+                        <div class="text_container">
+                            <h2>Стрелка и набережная</h2>
+                            <span>Там, где Ока встречается с Волгой, рождается особая атмосфера — место слияния двух
+                                великих рек всегда притягивало людей, и неслучайно именно здесь выросло одно из главных
+                                торговых мест страны. Мы пройдём от знаменитой Чкаловской лестницы — 560 ступеней,
+                                спускающихся прямо к воде — вдоль набережной до самой Стрелки. По дороге узнаем об
+                                истории речного порта, который кормил весь город, о пароходных династиях и волжских
+                                бурлаках. Поговорим о том, как индустриальные территории советской эпохи — заводы,
+                                склады, доки — превратились в современные общественные пространства, и почему Стрелка
+                                стала одним из главных символов обновлённого Нижнего Новгорода. Завершим маршрут на
+                                смотровой площадке с панорамным видом на слияние рек.</span>
+                            <div class="tour_info">
+                                <span>⭐ 5.0</span>
+                                <span>•</span>
+                                <span>👥 52 человека</span>
+                                <span>•</span>
+                                <span>⏱ 4.5 часа</span>
+                                <span>•</span>
+                                <span>💰 <s>1200</s> 999 ₽</span>
+                            </div>
+                            <div class="btn_container">
+                                <a href="schedule.html"><button>Перейти к расписанию</button></a>
+                            </div>
+                        </div>
+                        <div class="img_container">
+                            <img src="img/1.jpeg">
+                        </div>
+                    </div>
+                    <div class="print_review">
+                        <p><b>Отзыв:</b></p>
+                        <p>«Невероятная прогулка! Стрелка оставила незабываемые впечатления, особенно панорама на
+                            слияние рек.» — Елена Смирнова, 05.03.2026</p>
+                    </div>
+                </section>
+                <section id="tour4">
+                    <div class="tour_card">
+                        <div class="text_container">
+                            <h2>Ночной Нижний</h2>
+                            <span>Город после заката — это совершенно другой Нижний Новгород, который большинство
+                                туристов никогда не видят. Подсвеченные башни кремля отражаются в Волге, старинные
+                                улочки погружаются в тишину, а набережная наполняется особой атмосферой вечернего
+                                города. Мы отправимся в путь после заката и пройдём по маршруту, который специально
+                                составлен для ночного времени — с лучшими видовыми точками и самыми живописными
+                                уголками. Вы услышите истории о ночной жизни Нижнего в разные эпохи — от купеческих
+                                кутежей до советских тайн. Экскурсия включает посещение нескольких смотровых площадок, с
+                                которых открываются панорамы ночного города, и завершается на набережной у слияния рек.
+                                Это маршрут для тех, кто хочет увидеть Нижний с совершенно новой стороны.</span>
+                            <div class="tour_info">
+                                <span>⭐ 5.0</span>
+                                <span>•</span>
+                                <span>👥 156 человек</span>
+                                <span>•</span>
+                                <span>⏱ 1 час</span>
+                                <span>•</span>
+                                <span>💰 500 ₽</span>
+                            </div>
+                            <div class="btn_container">
+                                <a href="schedule.html"><button>Перейти к расписанию</button></a>
+                            </div>
+                        </div>
+                        <div class="img_container">
+                            <img src="img/4.webp">
+                        </div>
+                    </div>
+                    <div class="print_review">
+                        <p><b>Отзыв:</b></p>
+                        <p>«Ночная экскурсия — это нечто особенное! Город в подсветке выглядит волшебно.» — Елена
+                            Смирнова, 05.03.2026</p>
+                    </div>
+                </section>
+                <section id="tour5">
+                    <div class="tour_card">
+                        <div class="text_container">
+                            <h2>Литературный маршрут</h2>
+                            <span>Нижний Новгород дал России множество великих писателей — здесь родился Максим Горький,
+                                здесь творил Мельников-Печерский, здесь черпали вдохновение десятки литераторов, чьи
+                                произведения вошли в золотой фонд русской словесности. Мы пройдём по местам, которые
+                                вошли в их произведения — увидим дом на Почтовом съезде, где прошло детство Горького и
+                                которое он описал в автобиографической трилогии, спустимся в Заречную часть города с её
+                                слободами и нищими дворами. Поговорим о том, как Нижний повлиял на творчество писателей
+                                и почему именно Волга стала главной рекой русской литературы. Отдельная остановка —
+                                особняк, где бывал Владимир Короленко, и места связанные с Мельниковым-Печерским,
+                                автором романов о волжском купечестве.</span>
+                            <div class="tour_info">
+                                <span>⭐ 4.8</span>
+                                <span>•</span>
+                                <span>👥 35 человек</span>
+                                <span>•</span>
+                                <span>⏱ 2 часа</span>
+                                <span>•</span>
+                                <span>💰 800 ₽</span>
+                            </div>
+                            <div class="btn_container">
+                                <a href="schedule.html"><button>Перейти к расписанию</button></a>
+                            </div>
+                        </div>
+                        <div class="img_container">
+                            <img src="img/5.jpeg">
+                        </div>
+                    </div>
+                    <div class="print_review">
+                        <p><b>Отзыв:</b></p>
+                        <p>«Прекрасный маршрут для любителей литературы! Чувствуешь историю на каждом шагу.» — Дмитрий
+                            Козлов, 28.01.2026</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="reviews">
+            <h1>Отзывы</h1>
+            <div class="reviews_slider">
+                <input type="radio" name="reviews_radio" id="review1" class="slider_radio" checked>
+                <input type="radio" name="reviews_radio" id="review2" class="slider_radio">
+                <input type="radio" name="reviews_radio" id="review3" class="slider_radio">
+                <div class="reviews_slides">
+                    <div class="review_slide">
+                        <img src="img/avatar.jpg" alt="Аватар">
+                        <div class="review_text">
+                            <div class="review_header">
+                                <span>Рома</span>
+                                <span>★★★★★</span>
+                            </div>
+                            <span>Были на экскурсии по кремлю, очень понравилось. Гид классный, виды сверху
+                                огонь!</span>
+                            <div class="review_footer">
+                                <span class="review_date">12.02.2026</span>
+                                <a href="#tour1">Нижегородский кремль →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_slide">
+                        <img src="img/avatar.jpg" alt="Аватар">
+                        <div class="review_text">
+                            <div class="review_header">
+                                <span>Дима</span>
+                                <span>★★★★☆</span>
+                            </div>
+                            <span>Ходили на «Купеческий Нижний». Прикольно было по старым улицам гулять. Хочу ещё на
+                                ночную.</span>
+                            <div class="review_footer">
+                                <span class="review_date">28.01.2026</span>
+                                <a href="#tour2">Купеческий Нижний →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_slide">
+                        <img src="img/avatar.jpg" alt="Аватар">
+                        <div class="review_text">
+                            <div class="review_header">
+                                <span>Егор</span>
+                                <span>★★★★★</span>
+                            </div>
+                            <span>Ночная экскурсия топ! Город в подсветке вообще другой. Точно ещё приду.</span>
+                            <div class="review_footer">
+                                <span class="review_date">05.03.2026</span>
+                                <a href="#tour4">Ночной Нижний →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <label for="review1"></label>
+                    <label for="review2"></label>
+                    <label for="review3"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <footer>
+            <div class="footer_container">
+                <div class="footer_column1">
+                    <span>Телефон <a href="tel:88007894567" style="color:white">8 (800) 789-45-67</a></span>
+                    <span>e-mail: <a href="mailto:volzhskie-prostory@mail.ru"
+                            style="color:white">volzhskie-prostory@mail.ru</a></span>
+                </div>
+                <div class="footer_column2">
+                    <a href="index.html">Главная</a>
+                    <a href="index-light.html">Главная-светлая</a>
+                    <a href="schedule.html">Расписание</a>
+                    <a href="tour.html">Экскурсия</a>
+                </div>
+                <div class="footer_column3">
+                    <a href="registration.html">Регистрация</a>
+                    <a href="account.html">Личный кабинет</a>
+                    <a href="404.html">404</a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="js/accessibility.js"></script>
+    <script src="js/mobile_menu.js"></script>
+</body>
+
+</html>

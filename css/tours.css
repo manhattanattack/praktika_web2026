@@ -1,0 +1,115 @@
+.tours_container {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    border-radius: 10px;
+    width: 300px;
+    min-width: 250px;
+    background-color: white;
+    position: sticky;
+    top: 80px;
+    padding: 20px;
+    height: fit-content;
+}
+
+.navigation h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navigation span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tour_link {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #333;
+}
+
+.tour_link:hover {
+    color: rgb(161, 84, 84);
+}
+
+.review_link {
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tour_cards {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 60px;
+}
+
+.tour_card {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tour_card img {
+    height: 100%;
+    width: 400px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.text_container h2 {
+    margin-bottom: 15px;
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px 30px;
+}
+
+.text_container span {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.tour_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-top: auto;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+.btn_container button {
+    width: 250px;
+}
+
+.img_container {
+    margin-left: auto;
+}

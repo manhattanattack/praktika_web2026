@@ -1,0 +1,222 @@
+@media screen and (max-width: 796px) {
+
+    .header_nav,
+    .header_right {
+        display: none;
+    }
+
+    .burger_btn {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        transform: translate(-50%, -120%);
+    }
+
+    .hero span {
+        font-size: 16px;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero div {
+        font-size: 14px;
+        gap: 15px;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about_us_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_us_img img {
+        width: 100%;
+        max-width: 350px;
+        height: 250px;
+    }
+
+    .about_us_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_us_card {
+        width: 90%;
+    }
+
+    .trips_container {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .hot_trips_slider {
+        width: 100%;
+    }
+
+    .hot_trips_slides {
+        width: 300%;
+    }
+
+    .hot_trip_block {
+        padding: 20px;
+        height: auto;
+        min-height: 300px;
+        width: calc(140% / 6);
+    }
+
+
+    .hot_trip_block button {
+        width: 150%;
+        height: 150%;
+    }
+
+    .hot_trips_slide {
+        width: calc(80% / 6);
+    }
+
+    .hot_trips_slide img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #hot_trips_slide1:checked~.hot_trips_slides {
+        transform: translateX(0%);
+    }
+
+    #hot_trips_slide2:checked~.hot_trips_slides {
+        transform: translateX(-36.66%);
+    }
+
+    #hot_trips_slide3:checked~.hot_trips_slides {
+        transform: translateX(-73.33%);
+    }
+
+    .hot_badge {
+        font-size: 28px;
+        padding: 8px 25px;
+    }
+
+    .hot_section span {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .timer_block {
+        flex-direction: column;
+    }
+
+    .timer_digits {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .reviews_slider {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .reviews_slides {
+        width: 300%;
+    }
+
+    .review_slide {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .search_form {
+        flex-direction: column;
+    }
+
+    .search_form button {
+        width: 100%;
+    }
+
+    .tours_container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .tour_card {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .tour_card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .text_container {
+        margin: 10px;
+    }
+
+    .schedule_wrapper {
+        overflow-x: auto;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .form_container {
+        width: 90%;
+    }
+
+    .account_section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .account_form_container {
+        width: 90%;
+    }
+
+    .auth_section {
+        padding: 40px 15px;
+    }
+
+    .subscribe_section {
+        padding: 40px 15px;
+    }
+
+    .welcome_section {
+        padding: 40px 15px;
+    }
+
+    .accessible_btn_mobile {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    .schedule_booking {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .schedule_booking button {
+        width: 100%;
+    }
+}
